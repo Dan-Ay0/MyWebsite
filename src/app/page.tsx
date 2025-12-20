@@ -52,7 +52,7 @@ export default function AIDirectorOSSalesPage() {
               </span>
               <Button 
                 className="bg-orange-500 hover:bg-orange-600 text-white"
-                onClick={() => scrollToSection('pricing')}
+                onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
               >
                 Get Instant Access
               </Button>
@@ -98,7 +98,7 @@ export default function AIDirectorOSSalesPage() {
           <Button 
             size="lg" 
             className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 mb-4 w-full sm:w-auto"
-            onClick={() => scrollToSection('pricing')}
+            onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
           >
             Get the AI Director OS Bundle
             <ArrowRight className="ml-2 w-5 h-5" />
@@ -591,7 +591,7 @@ export default function AIDirectorOSSalesPage() {
               <div className="relative aspect-video">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/VHHB1I4dhmw?si=hyPIMbJqA8U1lD9Q"
                   title="AI Director Playbook Preview"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -618,11 +618,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full hover:bg-blue-50 transition-colors">
-                  <Play className="mr-2 w-4 h-4" />
-                  Watch Full Preview
-                </Button>
-              </CardContent>
+                </CardContent>
             </Card>
 
             {/* Video 2 */}
@@ -630,7 +626,7 @@ export default function AIDirectorOSSalesPage() {
               <div className="relative aspect-video">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/OQDFTcMp5hk?si=KAS5P8B-dRqhIF9h"
                   title="Real Agent Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -656,11 +652,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full hover:bg-orange-50 transition-colors">
-                  <Play className="mr-2 w-4 h-4" />
-                  Watch Live Demo
-                </Button>
-              </CardContent>
+                </CardContent>
             </Card>
           </div>
 
@@ -674,7 +666,7 @@ export default function AIDirectorOSSalesPage() {
             <Button 
               size="lg" 
               className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4"
-              onClick={() => scrollToSection('pricing')}
+              onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
             >
               Get Instant Access
             </Button>
@@ -742,7 +734,7 @@ export default function AIDirectorOSSalesPage() {
               <Button 
                 size="lg" 
                 className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                onClick={() => scrollToSection('pricing')}
+                onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
               >
                 Become a Founding Member
                 <ChevronRight className="ml-2 w-5 h-5" />
@@ -822,6 +814,7 @@ export default function AIDirectorOSSalesPage() {
                   <Button 
                     className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-3 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
                     size="lg"
+                    onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
                   >
                     Get Founding Member Access
                   </Button>
@@ -1079,7 +1072,10 @@ export default function AIDirectorOSSalesPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-lg sm:text-xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-2xl mb-4 sm:mb-6 inline-block shadow-xl transform hover:scale-105 transition-all duration-300">
+            <div 
+              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-lg sm:text-xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-2xl mb-4 sm:mb-6 inline-block shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
+              onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
+              >
               Get the AI Director OS Bundle
             </div>
 
@@ -1095,7 +1091,7 @@ export default function AIDirectorOSSalesPage() {
           <Button 
             size="lg" 
             className="bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
-            onClick={() => scrollToSection('pricing')}
+            onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
           >
             Get the Bundle
             <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
@@ -1181,7 +1177,7 @@ export default function AIDirectorOSSalesPage() {
               </div>
               <div className="text-center md:text-right">
                 <p className="text-gray-400 text-sm mb-2">
-                  © 2024 AI Director OS. All rights reserved.
+                  © 2025 AI Director OS. All rights reserved.
                 </p>
                 <div className="flex items-center gap-4 justify-center md:justify-end mt-2">
                   <a href="mailto:hello@aidirectoros.com" className="text-gray-400 hover:text-white transition-colors text-sm">
