@@ -52,7 +52,7 @@ export default function AIDirectorOSSalesPage() {
               </span>
               <Button 
                 className="bg-orange-500 hover:bg-orange-600 text-white"
-                onClick={() => scrollToSection('pricing')}
+                onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
               >
                 Get Instant Access
               </Button>
@@ -98,7 +98,7 @@ export default function AIDirectorOSSalesPage() {
           <Button 
             size="lg" 
             className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 mb-4 w-full sm:w-auto"
-            onClick={() => scrollToSection('pricing')}
+            onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
           >
             Get the AI Director OS Bundle
             <ArrowRight className="ml-2 w-5 h-5" />
@@ -123,7 +123,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 2: THE 2026 SHIFT */}
-      <section id="shift" className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
             The world moved from prompts to agents.
@@ -189,7 +189,7 @@ export default function AIDirectorOSSalesPage() {
 
           <div className="text-center">
             <p className="text-xl text-gray-600">
-              Most people still "type and pray." <br />
+              Most people still "type and pray." <br className="hidden sm:block" />
               <span className="font-bold text-blue-600">Your system = role-based AI coworkers + structured outputs</span>
             </p>
           </div>
@@ -197,7 +197,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 3: THE 3-LAYER SYSTEM */}
-      <section id="system" className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Learn it → Choose it → Run it
@@ -206,9 +206,9 @@ export default function AIDirectorOSSalesPage() {
             Most products give you prompts. This gives you a complete system.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {/* Card 1: Playbook */}
-            <Card className="border-2 border-blue-200 hover:shadow-xl transition-shadow">
+            <Card className="border-2 border-blue-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen className="w-6 h-6 text-blue-600" />
@@ -226,8 +226,12 @@ export default function AIDirectorOSSalesPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Why it matters:</h4>
-                  <p className="text-gray-600">Makes you permanently better at directing AI</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Helps you produce:</h4>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Clear AI directions</li>
+                    <li>• Professional outputs</li>
+                    <li>• Consistent quality</li>
+                  </ul>
                 </div>
                 <Badge variant="secondary" className="w-fit">
                   Best for beginners and busy professionals
@@ -236,7 +240,7 @@ export default function AIDirectorOSSalesPage() {
             </Card>
 
             {/* Card 2: Role Vault */}
-            <Card className="border-2 border-purple-200 hover:shadow-xl transition-shadow">
+            <Card className="border-2 border-purple-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-purple-600" />
@@ -264,7 +268,7 @@ export default function AIDirectorOSSalesPage() {
             </Card>
 
             {/* Card 3: OS */}
-            <Card className="border-2 border-orange-200 hover:shadow-xl transition-shadow">
+            <Card className="border-2 border-orange-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-orange-600" />
@@ -283,7 +287,10 @@ export default function AIDirectorOSSalesPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Includes:</h4>
-                  <p className="text-gray-600">Onboarding + workflows + ROI tracking + updates</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Onboarding + workflows</li>
+                    <li>• ROI tracking + updates</li>
+                  </ul>
                 </div>
                 <Badge variant="secondary" className="w-fit">
                   No copy/paste required
@@ -301,13 +308,13 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 4: WHAT'S INSIDE THE OS */}
-      <section id="os-features" className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
             Inside the AI Director OS (Notion Command Center)
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {[
               {
                 icon: <Users className="w-8 h-8" />,
@@ -372,7 +379,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 5: WHO CAN USE THIS */}
-      <section id="audience" className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Who this is for (beginner → advanced, individual → organization)
@@ -460,25 +467,26 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 6: BUNDLE STACK */}
-      <section id="bundle" className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Everything included (and why it's worth far more than the price)
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {/* Playbook */}
-            <Card className="border-2 border-blue-200">
+            <Card className="border-2 border-blue-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen className="w-6 h-6 text-blue-600" />
-                  AI Director Playbook
-                </CardTitle>
+                </div>
+                <CardTitle className="text-xl">AI Director Playbook</CardTitle>
+                <CardDescription className="text-lg">Learn the method (plain English)</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">What's inside:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <h4 className="font-semibold text-gray-900 mb-2">What's inside:</h4>
+                  <ul className="space-y-1 text-gray-600">
                     <li>• AI fundamentals explained simply</li>
                     <li>• Step-by-step mastery path</li>
                     <li>• Real-world examples</li>
@@ -486,16 +494,12 @@ export default function AIDirectorOSSalesPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Helps you produce:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <h4 className="font-semibold text-gray-900 mb-2">Helps you produce:</h4>
+                  <ul className="space-y-1 text-gray-600">
                     <li>• Clear AI directions</li>
                     <li>• Professional outputs</li>
                     <li>• Consistent quality</li>
                   </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Why it's different:</h4>
-                  <p className="text-sm text-gray-600">Not a prompt list - it's a complete learning system that makes you permanently better at AI direction.</p>
                 </div>
                 <div className="text-center pt-2">
                   <span className="text-2xl font-bold text-blue-600">$39 value</span>
@@ -504,34 +508,26 @@ export default function AIDirectorOSSalesPage() {
             </Card>
 
             {/* Role Vault */}
-            <Card className="border-2 border-purple-200">
+            <Card className="border-2 border-purple-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-purple-600" />
-                  AI Director Role Vault
-                </CardTitle>
+                </div>
+                <CardTitle className="text-xl">AI Director Role Vault</CardTitle>
+                <CardDescription className="text-lg">Choose the right system for any situation</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">What's inside:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• 169 professional role systems</li>
-                    <li>• Industry-specific workflows</li>
-                    <li>• Team collaboration patterns</li>
-                    <li>• Business process templates</li>
+                  <h4 className="font-semibold text-gray-900 mb-2">Professional role systems:</h4>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Not random prompts</li>
+                    <li>• Built-in guidance</li>
+                    <li>• Clear output expectations</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Helps you produce:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Role-specific outputs</li>
-                    <li>• Industry-standard documents</li>
-                    <li>• Team-ready workflows</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Why it's different:</h4>
-                  <p className="text-sm text-gray-600">Not random prompts - these are complete role systems with built-in guidance and expected outcomes.</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Works for:</h4>
+                  <p className="text-gray-600">Individuals + teams + business workflows</p>
                 </div>
                 <div className="text-center pt-2">
                   <span className="text-2xl font-bold text-purple-600">$79 value</span>
@@ -540,34 +536,29 @@ export default function AIDirectorOSSalesPage() {
             </Card>
 
             {/* OS */}
-            <Card className="border-2 border-orange-200">
+            <Card className="border-2 border-orange-200 hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-orange-600" />
-                  AI Director OS
-                </CardTitle>
+                </div>
+                <CardTitle className="text-xl">AI Director OS</CardTitle>
+                <CardDescription className="text-lg">Run it instantly</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">What's inside:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• 25+ one-click agents</li>
-                    <li>• Notion command center</li>
-                    <li>• 7-day transformation program</li>
-                    <li>• ROI tracking system</li>
+                  <h4 className="font-semibold text-gray-900 mb-2">One-click execution:</h4>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Links open ChatGPT agents</li>
+                    <li>• Agents interview you</li>
+                    <li>• Generate finished outputs</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Helps you produce:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Finished deliverables</li>
-                    <li>• Automated workflows</li>
-                    <li>• Measurable results</li>
+                  <h4 className="font-semibold text-gray-900 mb-2">Includes:</h4>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Onboarding + workflows</li>
+                    <li>• ROI tracking + updates</li>
                   </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Why it's different:</h4>
-                  <p className="text-sm text-gray-600">Not a template - it's a living system with one-click agents that interview you and create finished work.</p>
                 </div>
                 <div className="text-center pt-2">
                   <span className="text-2xl font-bold text-orange-600">$197 value</span>
@@ -588,19 +579,19 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 7: LIVE DEMO */}
-      <section id="demo" className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
             Watch the Agent Experience (Click → Questions → Finished Output)
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12">
             {/* Video 1 */}
             <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="relative aspect-video">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/VHHB1I4dhmw?si=hyPIMbJqA8U1lD9Q"
                   title="AI Director Playbook Preview"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -627,11 +618,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full hover:bg-blue-50 transition-colors">
-                  <Play className="mr-2 w-4 h-4" />
-                  Watch Full Preview
-                </Button>
-              </CardContent>
+                </CardContent>
             </Card>
 
             {/* Video 2 */}
@@ -639,7 +626,7 @@ export default function AIDirectorOSSalesPage() {
               <div className="relative aspect-video">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/OQDFTcMp5hk?si=KAS5P8B-dRqhIF9h"
                   title="Real Agent Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -665,11 +652,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full hover:bg-orange-50 transition-colors">
-                  <Play className="mr-2 w-4 h-4" />
-                  Watch Live Demo
-                </Button>
-              </CardContent>
+                </CardContent>
             </Card>
           </div>
 
@@ -683,7 +666,7 @@ export default function AIDirectorOSSalesPage() {
             <Button 
               size="lg" 
               className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4"
-              onClick={() => scrollToSection('pricing')}
+              onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
             >
               Get Instant Access
             </Button>
@@ -692,68 +675,77 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 8: FOUNDING MEMBERS */}
-      <section id="founding" className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Founding Members get priority support (first 100 only)
-          </h2>
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <div className="text-center mb-8">
+              <Award className="w-16 h-16 text-orange-500 mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Founding Members get priority support (first 100 only)
+              </h2>
+              <p className="text-xl text-gray-600 mb-6">
+                First come, first serve. When they're gone, they're gone.
+              </p>
+              <p className="text-xl text-blue-600 font-semibold mb-8">
+                Priority guidance: "If you get stuck, we'll guide you step-by-step"
+              </p>
+              <p className="text-lg text-gray-700 mb-8">
+                Your experience is what we value most
+              </p>
+            </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <Award className="w-16 h-16 text-orange-500 mx-auto mb-6" />
-            <h3 className="text-2xl font-bold mb-4">Founding Members = First 100 Buyers</h3>
-            <p className="text-xl text-gray-600 mb-6">
-              First come, first serve. When they're gone, they're gone.
-            </p>
-            <p className="text-lg text-gray-700 mb-8">
-              <strong>Priority guidance:</strong> "If you get stuck, we'll guide you step-by-step"
-            </p>
-            <p className="text-lg text-blue-600 mb-8">
-              Your experience is what we value most
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div>
-                <h4 className="font-semibold mb-3">What you get:</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    Priority support window
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  What you get:
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Priority support window</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    Direct help when stuck
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Direct help when stuck</span>
                   </li>
                 </ul>
               </div>
-              <div>
-                <h4 className="font-semibold mb-3">Exclusive perks:</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    Early workflow drops
+
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  Exclusive perks:
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Early workflow drops</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    Roadmap input access
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Roadmap input access</span>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
 
-          <Button 
-            size="lg" 
-            className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4"
-            onClick={() => scrollToSection('pricing')}
-          >
-            Become a Founding Member
-            <ChevronRight className="ml-2 w-5 h-5" />
-          </Button>
+            <div className="text-center">
+              <Button 
+                size="lg" 
+                className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
+              >
+                Become a Founding Member
+                <ChevronRight className="ml-2 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* SECTION 9: PRICING */}
-      <section id="pricing" className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
             Pricing
@@ -822,6 +814,7 @@ export default function AIDirectorOSSalesPage() {
                   <Button 
                     className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-3 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
                     size="lg"
+                    onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
                   >
                     Get Founding Member Access
                   </Button>
@@ -909,7 +902,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 10: PRO TEASER */}
-      <section id="pro" className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
             Coming Soon: AI Director Pro (Automation Edition)
@@ -982,7 +975,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 11: FAQ */}
-      <section id="faq" className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
             Frequently Asked Questions
@@ -1057,7 +1050,7 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* SECTION 12: FINAL CTA */}
-      <section id="final-cta" className="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800">
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-12">
             Agents are the future. Install yours today.
@@ -1079,7 +1072,10 @@ export default function AIDirectorOSSalesPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-lg sm:text-xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-2xl mb-4 sm:mb-6 inline-block shadow-xl transform hover:scale-105 transition-all duration-300">
+            <div 
+              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-lg sm:text-xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-2xl mb-4 sm:mb-6 inline-block shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
+              onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
+              >
               Get the AI Director OS Bundle
             </div>
 
@@ -1095,7 +1091,7 @@ export default function AIDirectorOSSalesPage() {
           <Button 
             size="lg" 
             className="bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
-            onClick={() => scrollToSection('pricing')}
+            onClick={() => window.open('https://danielwill.gumroad.com/l/AIDirectorOSBundle', '_blank')}
           >
             Get the Bundle
             <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
@@ -1104,48 +1100,98 @@ export default function AIDirectorOSSalesPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+      <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="font-semibold text-white mb-4">Product</h3>
-              <ul className="space-y-2">
-                <li><a href="#system" className="hover:text-white">Features</a></li>
-                <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
-                <li><a href="#demo" className="hover:text-white">Demo</a></li>
+              <h3 className="font-semibold text-white mb-4 text-lg">Product</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#system" className="hover:text-white transition-colors text-gray-300 hover:text-white">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing" className="hover:text-white transition-colors text-gray-300 hover:text-white">Pricing</a>
+                </li>
+                <li>
+                  <a href="#demo" className="hover:text-white transition-colors text-gray-300 hover:text-white">Demo</a>
+                </li>
+                <li>
+                  <a href="#faq" className="hover:text-white transition-colors text-gray-300 hover:text-white">FAQ</a>
+                </li>
               </ul>
             </div>
+
             <div>
-              <h3 className="font-semibold text-white mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li><a href="#faq" className="hover:text-white">FAQ</a></li>
-                <li><a href="mailto:support@aidirectoros.com" className="hover:text-white">Contact</a></li>
-                <li><a href="#" className="hover:text-white">Documentation</a></li>
+              <h3 className="font-semibold text-white mb-4 text-lg">Support</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#faq" className="hover:text-white transition-colors text-gray-300 hover:text-white">FAQ</a>
+                </li>
+                <li>
+                  <a href="mailto:hello@aidirectoros.com" className="hover:text-white transition-colors text-gray-300 hover:text-white">Contact</a>
+                </li>
+                <li>
+                  <a href="#privacy" className="hover:text-white transition-colors text-gray-300 hover:text-white">Privacy Policy</a>
+                </li>
               </ul>
             </div>
+
             <div>
-              <h3 className="font-semibold text-white mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="hover:text-white">About</a></li>
-                <li><a href="#" className="hover:text-white">Blog</a></li>
-                <li><a href="#" className="hover:text-white">Affiliates</a></li>
+              <h3 className="font-semibold text-white mb-4 text-lg">Company</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#about" className="hover:text-white transition-colors text-gray-300 hover:text-white">About</a>
+                </li>
+                <li>
+                  <a href="#blog" className="hover:text-white transition-colors text-gray-300 hover:text-white">Blog</a>
+                </li>
+                <li>
+                  <a href="#affiliates" className="hover:text-white transition-colors text-gray-300 hover:text-white">Affiliates</a>
+                </li>
               </ul>
             </div>
+
             <div>
-              <h3 className="font-semibold text-white mb-4">Legal</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white">Refund Policy</a></li>
+              <h3 className="font-semibold text-white mb-4 text-lg">Legal</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#terms" className="hover:text-white transition-colors text-gray-300 hover:text-white">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#privacy" className="hover:text-white transition-colors text-gray-300 hover:text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#refund" className="hover:text-white transition-colors text-gray-300 hover:text-white">Refund Policy</a>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400">
-              © 2024 AI Director OS. All rights reserved. | 
-              <a href="mailto:hello@aidirectoros.com" className="hover:text-white ml-1">hello@aidirectoros.com</a>
-            </p>
+          <div className="border-t border-gray-700 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-blue-600 font-bold text-sm">AI</span>
+                </div>
+                <span className="text-white font-semibold text-xl">AI Director OS</span>
+              </div>
+              <div className="text-center md:text-right">
+                <p className="text-gray-400 text-sm mb-2">
+                  © 2025 AI Director OS. All rights reserved.
+                </p>
+                <div className="flex items-center gap-4 justify-center md:justify-end mt-2">
+                  <a href="mailto:hello@aidirectoros.com" className="text-gray-400 hover:text-white transition-colors text-sm">
+                    hello@aidirectoros.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-500 text-xs">
+                Built with ❤️ for AI-powered professionals
+              </p>
+            </div>
           </div>
         </div>
       </footer>
