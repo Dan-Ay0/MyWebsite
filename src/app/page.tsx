@@ -561,7 +561,7 @@ export default function AIDirectorOSSalesPage() {
                   </ul>
                 </div>
                 <div className="text-center pt-2">
-                  <span className="text-2xl font-bold text-orange-600">$197 value</span>
+                  <span className="text-2xl font-bold text-orange-600">$149 value</span>
                 </div>
               </CardContent>
             </Card>
@@ -572,7 +572,7 @@ export default function AIDirectorOSSalesPage() {
               Even if you only use ONE part, you win. Together, it becomes a full operating system.
             </p>
             <p className="text-3xl font-bold text-blue-600">
-              Total Value: $315 | Founding Member: $99
+              Total Value: $305 | Founding Member: $99
             </p>
           </div>
         </div>
@@ -791,7 +791,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                     <div className="flex items-center gap-2 p-2 bg-orange-50 rounded-lg animate-fade-in" style={{animationDelay: '0.2s'}}>
                       <Zap className="w-4 h-4 text-orange-600" />
-                      <span className="text-sm text-gray-700">AI Director OS ($197 value)</span>
+                      <span className="text-sm text-gray-700">AI Director OS ($149 value)</span>
                     </div>
                   </div>
                 </div>
@@ -858,7 +858,7 @@ export default function AIDirectorOSSalesPage() {
                     </div>
                     <div className="flex items-center gap-2 p-2 bg-orange-50 rounded-lg animate-fade-in" style={{animationDelay: '0.2s'}}>
                       <Zap className="w-4 h-4 text-orange-600" />
-                      <span className="text-sm text-gray-700">AI Director OS ($197 value)</span>
+                      <span className="text-sm text-gray-700">AI Director OS ($149 value)</span>
                     </div>
                   </div>
                 </div>
