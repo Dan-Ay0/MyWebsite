@@ -11,6 +11,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
+// Declare the fbq function for TypeScript
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
 export default function AiCheatSheetPopup() {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
@@ -36,12 +43,19 @@ export default function AiCheatSheetPopup() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
+    // Send the email to your form service
     await fetch("https://formspree.io/f/mrezrogw", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
 
+    // ===========> CRITICAL: Track the conversion for Facebook <===========
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq('track', 'Lead');
+    }
+
+    // Show success message
     setSent(true);
   }
 
