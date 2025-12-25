@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 // Import the client component (popup)
 import AiCheatSheetPopup from "@/components/AiCheatSheetPopup";
+// ===========> ADD THIS IMPORT LINE <===========
+import FacebookPixel from "./FacebookPixel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +43,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
+        {/* ===========> ADD THIS COMPONENT LINE <=========== */}
+        <FacebookPixel />
+        
         {/* Client popup component */}
         <AiCheatSheetPopup />
 
